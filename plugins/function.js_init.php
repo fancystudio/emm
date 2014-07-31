@@ -31,7 +31,6 @@ function smarty_function_js_init($params, &$template)
 	var isIExplorer = false;
 	var ieVer = 0;
 	$(document).ready(function(){
-		
 		activeMenuFirstLevelTransition = false;
 		$(".submenu-aktuality li a,.bx-archiv").click(function(){
 			if(!animationInProgress){	
@@ -542,6 +541,7 @@ function smarty_function_js_init($params, &$template)
 		}
 	}
 	function getContent(content_id,hasFourCubesHorizontal,isNews){
+		console.log("showNewContent");
 		if(contentIsLoad && $(".boxHorizontal").css("visibility") != "hidden"){
 			hideOldContent("content",content_id,hasFourCubesHorizontal,isNews); //parameter true pre zobrazenie index boxov po skryti obsahu
 		}else{
@@ -1094,6 +1094,7 @@ function smarty_function_js_init($params, &$template)
 		}
 	}
 	function showArchiveYear(object){
+		console.log(object);
 		if(!$(object).hasClass("active")){
 			$("." + $(".yearsList li").find(".active").attr("id")).fadeOut(500,function(){
 	        	$(".archiveYear " + "." + $(object).attr("id")).fadeIn(500);
