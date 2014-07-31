@@ -1,0 +1,8 @@
+AuthUserFile /home/emm/local/data/www/formular/.htpasswd
+AuthGroupFile /home/emm/local/data/www/formular/.htgrp
+AuthName "www.emm.sk - access restricted area"
+AuthType Basic
+
+<Limit GET>
+require group emm
+</Limit>

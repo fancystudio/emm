@@ -1,0 +1,55 @@
+/* Scroll Bar Master Styling Starts Here */
+/* All comments can be freely removed from the css */
+
+.scrollgeneric {
+line-height: 1px;
+font-size: 1px;
+position: absolute;
+top: 0; left: 0;
+}
+
+.vscrollerbase {
+padding-top: 10px;
+width: 16px;
+height: 16px;
+background-color: #EBEBEB;
+}
+.vscrollerbar {
+width: 16px;
+background-color: #ECA442;
+}
+.hscrollerbase {
+height: 10px;
+background-color: white;
+}
+.hscrollerbar {
+height: 10px;
+background-color: white;
+}
+
+.scrollerjogbox {
+width: 16px;
+height: 16px;
+top: auto; left: auto;
+bottom: 0px; right: 0px;
+background-color: white;
+}
+
+#mycustomscroll {
+/* Typical fixed height and fixed width example */
+width: 730px;
+height: 480px;
+overflow: auto;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+padding-right: 1em;
+}
+
+.fixedwidth {
+/* a wide div is used for creating horizontal scrollbars for demonstration purposes */
+width: 550px;
+height: 400px;
+position: relative;
+color: black;
+padding: 1px;
+}

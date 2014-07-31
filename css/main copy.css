@@ -1,0 +1,1418 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'eurostile_lt_stdregular';
+    src: url('../fonts/eurostileltstd-webfont.eot');
+    src: url('../fonts/eurostileltstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/eurostileltstd-webfont.woff') format('woff'),
+         url('../fonts/eurostileltstd-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'eurostile_lt_stdbold';
+    src: url('../fonts/eurostileltstd-bold-webfont.eot');
+    src: url('../fonts/eurostileltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/eurostileltstd-bold-webfont.woff') format('woff'),
+         url('../fonts/eurostileltstd-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container{
+	min-width: 1183px;
+	max-width: 1183px;
+	position: relative;
+	padding: 0px
+}
+
+strong, h3{
+	font-weight: bold
+}
+
+body{
+
+	/*background: url(../img/bg.jpg)no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+	
+	
+	
+	/*
+
+	background: url(../img/background-2.jpg) !important;
+    background-position: center top;
+    background-size: 100% auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    /*min-height: 1300px;
+    position: static !important
+*/
+   
+    
+    
+    
+    
+   
+      background: url(../img/background-2.jpg) no-repeat center top ; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+   
+
+    
+  }  
+ 
+ 
+
+ 
+p {
+	font-size: 13px;
+}   
+
+a {
+	color: #006aa8;
+}
+ 
+a:hover{
+	text-decoration: none
+}
+
+li a.uvod {
+	display: none !important;
+}
+
+/*-----framework na stvorcovy design-----*/
+.w-st-1 {
+	width: 232px !important
+}
+.w-st-3 {
+	width: 464px !important
+}
+.w-st-3 {
+	width: 696px !important
+}
+
+.h-st-1 {
+	height: 232px
+}
+
+.h-st-2 {
+	height: 464px
+}
+.n-offset-w-st-1{
+	margin-left: -232px
+}
+
+.offset-w-st-1{
+	margin-left: 232px
+}
+.offset-w-st-2{
+	margin-left: 464px
+}
+/*-----framework na stvorcovy design-----*/
+
+.animacia{
+	margin-top: 109px;
+	position: absolute
+	
+	
+}
+.squares{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 105%;
+	height: 105%
+}
+
+.submenu-bezpecnost-is img {
+	position: absolute;
+	top: 275px;
+	left: 205px;
+	z-index: 999;
+}
+
+.logo-wrapper{
+	background-color: white;
+	padding: 55px 25px 125px 25px;
+	position: relative;
+}
+  
+.main-navigation{
+	/*position: fixed;*/
+	z-index: 90;
+}
+
+.main-menu{
+	text-transform: uppercase;
+	box-shadow: -4px 6px 19px rgba(4, 4, 21, 0.6);
+	background-color: #006aa8;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 22px;
+	width: 100%;
+	z-index: 200;
+	position: relative;
+	min-height: 232px
+}
+
+
+	
+.main-menu a{
+	font-family: eurostile_lt_stdregular;
+	color: white;
+	font-size: 15px
+}
+	
+.nav>li>a {
+	padding: 4px 25px;
+}
+	
+.main-menu a:hover, .ospol.active, .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+	color: white;
+	font-family: eurostile_lt_stdbold;
+	/*text-shadow: 1px 0px 20px white;*/
+	/*-webkit-transition: width 0.5s; *//*Safari & Chrome*/
+	/*transition: width 0.5s;*/
+	/*-moz-transition: width 0.5s;*/ /* Firefox 4 */
+	/*-o-transition: width 0.5s;*/ /* Opera */
+	background-color: transparent
+}	
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+}
+
+.sub-o-nas.main-menu{
+	background: rgba(0,105,167,0.8);
+	background: url(rgba/0-105-167-08.png) repeat\9; /* IE8 */
+}
+ 
+.sub-o-nas {
+	margin-top: 109px;
+	padding: 17px 0px;
+} 
+ 
+.sub-o-nas a{
+	font-size: 13px;
+} 
+
+.sub-o-nas li a {
+	padding: 2px 15px 2px 25px;
+}
+
+
+.nav-level-3{
+	text-transform: none;
+	width: 232px;
+	padding: 0px;
+	position: absolute;
+	left: -1px;
+	background-color: transparent;
+	background: url(../img/menu-sub-3.png);
+}
+
+.nav-level-3 ul{
+	margin: 0px;
+	padding: 0px;
+	padding: 25px 25px;
+}
+.nav-level-3 li{
+	list-style-image: url(../img/custom-bullet.png);
+	padding-bottom: 12px
+}
+ 
+.menuThirdLevel a{
+	color: white
+} 
+ 
+.footer-wrapper {
+	background-color: rgba(1, 39, 75, 0.8);
+	background: url(rgba/1-39-75-08.png) repeat\9; /* IE8 */
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 12px 0px;
+	font-size: 12px;
+	color: white;
+	font-family: eurostile_lt_stdregular;
+	z-index: 9999;
+}
+
+.certifikaty {
+	padding-top: 48px;
+	padding-left: 35px;
+}
+
+.tagline {
+	padding-top: 81px;
+	padding-left: 273px;
+}
+
+.square{
+	width: 27px;
+	height: 27px;
+	display: block;
+	position: absolute;
+	background-color: white;   
+}
+
+.sq-1{
+	top: 182px;
+	left: -44px
+}
+
+.sq-2{
+	top: 490px;
+	left: 0px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.55);
+	background: url(rgba/255-255-255-055.png) repeat\9; /* IE8 */
+}
+
+.sq-3{
+	top: 790px;
+	left: 128px;
+	background-color: rgba(255, 255, 255, 1);
+	background: white\9; /* IE8 */
+}
+
+.sq-4 {
+	top: 392px;
+	left: 273px;
+	background-color: rgba(255, 255, 255, 1);
+	background: white\9; /* IE8 */
+	z-index: 1;
+}
+
+.sq-5{
+	width: 78px;
+	height: 78px;
+	background: url(../img/sq-5.png) no-repeat transparent;
+	top: 154px;
+	left: 493px;
+	background-color: transparent !important;
+}
+
+.sq-6{
+	width: 78px;
+	height: 78px;
+	background: url(../img/sq-6.png) no-repeat transparent;
+	bottom: 40px;
+	left: 143px;
+	background-color: transparent !important;
+}
+
+.language{
+	margin-top: -29px;
+	position: absolute;
+	right: -10px;
+}
+
+span.sk, span.en{
+	text-transform: uppercase;
+	font-family: eurostile_lt_stdbold;
+	color: #006aa8;
+}
+
+.sk.active a{
+	color: #565656
+}
+
+.sk.active a:hover, .en a:hover{
+	text-decoration: none
+}
+
+span.sk, span.en {
+	text-transform: uppercase;
+	display: block;
+	float: right;
+	background: white;
+	margin-right: 10px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+.o-spolocnosti{
+	display: block;
+	float: left;
+	background: rgba(255,255,255, 1);
+	background: white\9; /* IE8 */
+	margin-left: 465px;
+	margin-top: 0px;
+	padding: 20px 15px 15px 15px;
+	font-size: 12px;
+	height: 228px;
+	position: relative
+}
+
+.content-box-left{
+	background: rgba(255,255,255, 0.85);
+	background: url(rgba/255-255-255-085.png) repeat\9; /* IE8 */
+	display: block;
+	position: absolute;
+	width: 234px;
+	height: 100%;
+	top:0;
+	left: -234px
+}
+
+
+.content-box-bottom{
+	background: rgba(255,255,255, 0.43);
+	background: url(rgba/255-255-255-043.png) repeat\9; /* IE8 */
+	display: block;
+	position: absolute;
+	width: 208px;
+	height: 234px;
+	bottom:-234px;
+	left: 208px
+}
+
+
+.content-box-right-1{
+	background: rgba(255,255,255, 0.35);
+	background: url(rgba/255-255-255-035.png) repeat\9; /* IE8 */
+	display: block;
+	position: absolute;
+	width: 209px;
+	height: 258px;
+	top:-258px;
+	left: 0px;
+	opacity: 1
+}
+
+.content-box-right-2{
+	background: rgba(255,255,255, 0.65);
+	background: url(rgba/255-255-255-065.png) repeat\9; /* IE8 */
+	display: block;
+	position: absolute;
+	width: 208px;
+	height: 258px;
+	top:-258px;
+	right: 208px
+}
+
+.content-box-right-3{
+	background: rgba(255,255,255, 0.45);
+	background: url(rgba/255-255-255-045.png) repeat\9; /* IE8 */
+	display: block;
+	position: absolute;
+	width: 208px;
+	height: 258px;
+	top:-258px;
+	right: 0px
+}
+
+.o-spolocnosti{
+	display: none
+}
+
+
+
+.submenu-bezpecnost-is, .submenu-it-riesenia, .submenu-technicka-bezpecnost, .submenu-aktuality {
+	display: block
+}
+
+.submenu-bezpecnost-is{
+	background: rgba(255,255,255,0.85);
+	background: url(rgba/255-255-255-085.png) repeat\9; /* IE8 */
+	margin-top: 341px;
+}
+
+.submenu-it-riesenia{
+	margin-left: 0px;
+	background: rgba(255,255,255,0.85);
+	background: url(rgba/255-255-255-085.png) repeat\9; /* IE8 */
+	margin-top: 573px
+}
+
+.submenu-technicka-bezpecnost{
+	margin-left: 0px;
+	background: rgba(255,255,255,0.85);
+	background: url(rgba/255-255-255-085.png) repeat\9; /* IE8 */
+	margin-top: 341px
+}
+
+
+.index-boxes{
+	position: relative;
+	z-index: 9999;
+	padding: 0px 15px 0px 15px;
+}
+
+
+.index-boxes ul{
+	padding: 0px
+}
+
+.index-boxes li a{
+	color: #3e3e3e;
+}
+.index-boxes li {
+	margin-left: 15px;
+	font-size: 11px;
+	padding-bottom: 15px;
+	list-style: initial;
+}
+
+.index-boxes h3{
+	font-family: eurostile_lt_stdbold;
+	color: #006aa8;
+	font-size: 17px;
+	padding-bottom: 5px;
+	font-weight: normal !important
+}
+
+.top-strip {
+	position: absolute;
+	top: -26px;
+	width: 100%;
+	background: rgba(255,255,255,0.3);
+	background: url(rgba/255-255-255-030.png) repeat\9; /* IE8 */
+	height: 26px;
+	left: 0;
+}
+
+.bottom-strip {
+	position: absolute;
+	bottom: -26px;
+	width: 100%;
+	background: rgba(255,255,255,0.3);
+	background: url(rgba/255-255-255-030.png) repeat\9; /* IE8 */
+	height: 26px;
+	left: 0;
+}
+
+.right-strip {
+	position: absolute;
+	right: -26px;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	background: url(rgba/255-255-255-030.png) repeat\9; /* IE8 */
+	width: 26px;
+	top: 0;
+}
+
+.left-strip {
+	position: absolute;
+	left: -26px;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	background: url(rgba/255-255-255-030.png) repeat\9; /* IE8 */
+	width: 26px;
+	top: 0;
+}
+
+
+.top-square {
+	position: absolute;
+	top: -26px;
+	width: 26px;
+	background: rgba(255,255,255,0.1);
+	background: url(rgba/255-255-255-010.png) repeat\9; /* IE8 */
+	height: 26px;
+	right: -26px;
+}
+
+.bottom-square {
+	position: absolute;
+	bottom: -26px;
+	width: 26px;
+	background: rgba(255,255,255,0.1);
+	background: url(rgba/255-255-255-010.png) repeat\9; /* IE8 */
+	height: 26px;
+	left: -26px;
+}
+
+.right-square {
+	position: absolute;
+	right: -26px;
+	height: 26px;
+	background: rgba(255,255,255,0.1);
+	background: url(rgba/255-255-255-010.png) repeat\9; /* IE8 */
+	width: 26px;
+	bottom: -26px;
+}
+
+.left-square {
+	position: absolute;
+	left: -26px;
+	height: 26px;
+	background: rgba(255,255,255,0.1);
+	background: url(rgba/255-255-255-010.png) repeat\9; /* IE8 */
+	width: 26px;
+	top: -26px;
+}
+
+.submenu-aktuality{
+	margin-left: 0px;
+	background: url(../img/aktuality-bg.jpg) no-repeat;
+	background-position: -1px 0px;
+	margin-top: 109px;
+	padding-right: 15px;
+	margin-left: 24px;
+	margin-right: -24px;
+	
+}
+
+/*----------------------novinky-------------------------*/
+.bx-next {
+position: absolute;
+right: 15px;
+bottom: 15px;
+font-size: 0.75em;
+color: #3e3e3e;
+}
+
+.bx-next:hover, .bx-prev:hover, .bx-archiv:hover {
+color: #006aa8;
+}
+a:hover, a:focus {
+text-decoration: none;
+}
+
+.bx-prev {
+position: absolute;
+left: 15px;
+bottom: 15px;
+font-size: 0.75em;
+color: #3e3e3e;
+}
+
+.bx-archiv {
+position: absolute;
+right: 100px;
+bottom: 15px;
+font-size: 0.85em;
+font-family: eurostile_lt_stdbold;
+}
+
+.yearsList li a, .yearsList li a:hover{
+	font-family: eurostile_lt_stdbold;
+	background: #006aa8;
+	color: white;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding: 3px 7px;
+margin: 15px 5px 40px 0px;
+}
+
+.archiveYear ul h2 {
+margin-left: -40px;
+margin-bottom: 25px;
+}
+
+.archiveYear ul li a {
+color: #3e3e3e
+}
+/*----------------------novinky-------------------------*/
+
+
+
+
+/*----------------------podstranka----------------------*/
+
+.podstranka.historia, .podstranka.vizia-spolocnosti, .podstranka.profil, .podstranka.systemy-manazerstva, .podstranka.kariera, .podstranka.partnerstva, .podstranka.top-projekty{
+	background-image: url(../img/obsahova-plocha.jpg);
+}
+
+.podstranka.manazment{
+	background-image: url(../img/manazment-bg.png);
+}
+
+
+.podstranka{
+	position: relative;
+	margin-top: 109px;
+
+}
+
+.obsahova{
+	/*background-color: white;*/
+	margin-left: 464px;
+	padding:  20px;
+	background-image: url(../img/obsahova-plocha.jpg);
+	position: relative 
+
+}
+
+.podstranka{
+	padding: 20px
+}
+
+.podstranka h2{
+	font-family: eurostile_lt_stdbold;
+	color: #006aa8;
+	font-size: 17px;
+	padding-top: 0px;
+	margin-top: 0px
+}
+
+.podstranka h3{
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.podstranka > ul > li {
+	padding: 5px;
+}
+
+.podstranka > ul  {
+	margin: 15px 0px;
+}
+
+.animacia .text{
+	margin-bottom: 250px
+}
+
+/*----------------------podstranka----------------------*/
+
+
+
+/*----------------------kontakt----------------------*/
+
+
+
+.kontakt-table{
+	
+	z-index: 9;
+	font-size: 0.85em;
+	
+}
+
+.kontakt-table p{
+	padding: 0px 20px;
+	font-size: 12px
+}
+
+.kontakt-table a{
+	text-decoration: underline
+}
+
+.kontakt-table h5{
+	padding: 5px 20px;
+	color: #0168aa;
+	margin-bottom: 0px;
+	font-size: 1.1em;
+}
+
+.kontakt-table tr{
+	height: 232px
+}
+
+.kontakt-table tr td{
+	width: 232px;
+	vertical-align: top
+}
+
+.kontakt-table img{
+	width: 100%;
+	height: 100%;
+}
+
+.podstranka.kontakt{
+	margin-left: 232px; /* kvoli tomuto nejde dobre animacia */
+	width: 928px !important;
+	padding: 0px !important
+}
+
+.k-sq-1{
+	background: url(../img/kontakt/k-sq-1.png) repeat;
+}
+
+.k-sq-2{
+	background: url(../img/kontakt/k-sq-2.png) repeat;
+}
+
+.k-sq-3{
+	background: url(../img/kontakt/k-sq-3.png) repeat;
+}
+
+.k-sq-4{
+	background: url(../img/kontakt/k-sq-4.png) repeat;
+}
+
+.k-sq-5{
+	background: url(../img/kontakt/k-sq-5.png) repeat;
+}
+
+.k-sq-6{
+	background: url(../img/kontakt/k-sq-6.png) repeat;
+}
+
+.k-sq-7{
+	background: white
+}
+
+
+.cf-column {
+	float: left;
+	width: 210px;
+}
+
+.cf-column input{
+	width: 193px;
+	margin: 8px 0px 13px 0px;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.cf-column.second{
+	margin-left: 20px;
+}
+
+.cf-column.third{
+	margin-left: 22px;
+	width: 190px;
+	padding-top: 194px
+}
+
+.priorita-l{
+	font-weight: normal;
+margin-right: 15px;
+}
+
+select.priorita{
+	height: 30px;
+	margin-top: 8px;
+}
+
+.requered{
+	color: red;
+}
+
+
+select.prijemca{
+	width: 425px;
+	margin-left: 20px;
+	height: 30px;
+	margin-top: 55px;
+}
+
+textarea.popisProblemuArea {
+width: 194px;
+height: 181px;
+}
+
+input#submitOrder {
+float: right;
+border: none;
+background: #006aa8;
+color: white;
+padding: 10px 20px;
+margin-top: 105px;
+}
+
+.captcha {
+	float: left;
+	width: 100%;
+}
+
+img#captchaimg {
+margin-top: 2px;
+}
+
+.vpb_captcha_wrappers {
+	height: 30px;
+	margin-top: 5px;
+}
+
+.offset-second-step{
+	float: left;
+margin-left: 230px;
+}
+.containerVertical-2{
+	border: 0px;
+	
+}
+/*----------------------kontakt----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+/***************** Rotation Effects ********************/
+/*******************************************************/
+
+.te-perspective{ 
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
+	
+}
+.te-transition,
+.te-cover{
+	position: absolute;
+	width: 232px;
+	height: 325px;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.te-transition,
+.te-cover.te-hide,
+.te-images{ display: none; }
+.te-transition.te-show { display: block; }
+.te-back,
+.te-front{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.te-front{ z-index: 2; }
+.te-back{
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/***************** Rotation4 ********************/
+.te-rotation4.te-show .te-front,
+.te-rotation4.te-show .te-back{
+	-webkit-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	-o-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+.te-rotation4.te-show .te-front{
+	-webkit-animation: rotationFront4 0.8s linear;
+	-moz-animation: rotationFront4 0.8s linear;
+	-ms-animation: rotationFront4 0.8s linear;
+	-o-animation: rotationFront4 0.8s linear;
+	animation: rotationFront4 0.8s linear;
+}
+.te-rotation4.te-show .te-back {
+	-webkit-animation: rotationBack4 0.8s ease-in-out;
+	-moz-animation: rotationBack4 0.8s ease-in-out;
+	-ms-animation: rotationBack4 0.8s ease-in-out;
+	-o-animation: rotationBack4 0.8s ease-in-out;
+	animation: rotationBack4 0.8s ease-in-out;
+}
+@-webkit-keyframes rotationFront4{
+
+	0% { -webkit-transform: rotate3d(0,1,0,0); opacity: 1; -webkit-animation-timing-function: ease-in;}
+	30% { -webkit-transform: rotate3d(0,1,0,90deg); opacity: 0.5; -webkit-animation-timing-function: ease-out;}
+	100% { -webkit-transform: rotate3d(0,1,0,180deg); opacity: 0; }
+}
+@-webkit-keyframes rotationBack4{
+	0% { opacity: 0; rotate3d(0,1,0,90deg); }
+	30% { -webkit-transform: rotate3d(0,1,0,90deg); opacity: 0; }
+	60% { -webkit-transform: rotate3d(0,1,0,-13deg); opacity: 1; }
+	70% { -webkit-transform: rotate3d(0,1,0,8deg); opacity: 1; }
+	80% { -webkit-transform: rotate3d(0,1,0,0deg); opacity: 1; }
+	95% { -webkit-transform: rotate3d(0,1,0,3deg); opacity: 1; }
+	100% { -webkit-transform: rotate3d(0,1,0,0deg); opacity: 1; }
+}
+
+@-webkit-keyframes rotationBack5{
+	0% { opacity: 0; rotate3d(0,1,0,90deg); }
+	30% { -webkit-transform: rotate3d(0,1,0,90deg); opacity: 0; }
+	60% { -webkit-transform: rotate3d(0,1,0,-13deg); opacity: 1; }
+	70% { -webkit-transform: rotate3d(0,1,0,8deg); opacity: 1; }
+	80% { -webkit-transform: rotate3d(0,1,0,0deg); opacity: 1; }
+	95% { -webkit-transform: rotate3d(0,1,0,3deg); opacity: 1; }
+	100% { -webkit-transform: rotate3d(0,1,0,0deg); opacity: 1; }
+	
+}
+
+
+@-webkit-keyframes disable1{
+0% { 
+-webkit-transform: rotate3d(0,1,0,0); 
+-moz-transform: rotate3d(0,1,0,0); 
+-ms-transform: rotate3d(0,1,0,0); 
+-o-transform: rotate3d(0,1,0,0); 
+transform: rotate3d(0,1,0,0); 
+opacity: 1; 
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+30% { -webkit-transform: rotate3d(0,1,0,-30deg); opacity: 0.5; -webkit-animation-timing-function: ease-out;}
+100% { -webkit-transform: rotate3d(0,1,0,-180deg); opacity: 0; }
+}
+
+@-webkit-keyframes disable2{
+0% { -webkit-transform: rotate3d(0,1,0,0); opacity: 1; -webkit-animation-timing-function: ease-in;}
+30% { -webkit-transform: rotate3d(0,1,0,-30deg); opacity: 0.5; -webkit-animation-timing-function: ease-out;}
+100% { -webkit-transform: rotate3d(0,1,0,-180deg); opacity: 0; }
+}
+
+@-webkit-keyframes disable3{
+0% { -webkit-transform: rotate3d(1,0,0,0); opacity: 1; -webkit-animation-timing-function: ease-in;}
+30% { -webkit-transform: rotate3d(1,0,0,30deg); opacity: 0.5; -webkit-animation-timing-function: ease-out;}
+100% { -webkit-transform: rotate3d(1,0,0,180deg); opacity: 0; }
+}
+
+@-webkit-keyframes disable4{
+0% { -webkit-transform: rotate3d(0,1,0,0); opacity: 1; -webkit-animation-timing-function: ease-in;}
+30% { -webkit-transform: rotate3d(0,1,0,-30deg); opacity: 0.5; -webkit-animation-timing-function: ease-out;}
+100% { -webkit-transform: rotate3d(0,1,0,-180deg); opacity: 0; }
+}
+
+.disable1{
+
+-webkit-transform-origin: 0% 50%;
+-webkit-animation: disable1 0.8s linear;
+
+}
+
+.disable2{
+-webkit-transform-origin: 50% 0%;
+-webkit-animation: disable2 0.8s 0.3s linear;
+}
+
+.disable3{
+-webkit-transform-origin: -0% 0%;
+-webkit-animation: disable3 0.8s 0.5s linear;
+}
+
+.disable4{
+-webkit-transform-origin: 0 -50% ;
+-webkit-animation: disable4 0.8s 0.8s linear;
+}
+
+@-webkit-keyframes onas{
+0% { opacity: 0; -webkit-animation-timing-function: ease-in;}
+30% {  opacity: 0.4; -webkit-animation-timing-function: ease-out;}
+100% { opacity: 1; }
+}
+
+.o-spolocnosti{
+}
+
+.o-spolocnosti.active{
+	-webkit-animation: onas 0.8s linear;
+	display: block
+}
+
+.content-box-right-1{
+	opacity: 0;
+	-webkit-animation: onas 0.2s 0s linear;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+.content-box-right-2{
+	opacity: 0;
+	-webkit-animation: onas 0.2s 0.3s linear;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+.content-box-right-3{
+	opacity: 0;
+	-webkit-animation: onas 0.3s 0.2s linear;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+.content-box-right-bottom{
+	opacity: 0;
+	-webkit-animation: onas 0.4s 0.1s linear;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+.content-box-right-left{
+	opacity: 0;
+	-webkit-animation: onas 0.5s 0.3s linear;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+   -moz-animation-fill-mode:forwards; /*FF 5+*/
+   -o-animation-fill-mode:forwards; /*Not implemented yet*/
+   -ms-animation-fill-mode:forwards; /*IE 10+*/
+   animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+
+
+/* Some common styles for the transition effect */
+.te-container{
+	width: 329px;
+	margin: 0px auto 40px auto;
+}
+.te-controls{
+	height: 40px;
+	position: relative;
+}
+
+.te-container select:hover, a.te-next:hover{
+	color: #000;
+}
+
+.te-wrapper{
+	position: absolute;
+	z-index: 20;
+}
+
+
+.uc-container.uc-current{
+ top: 0px !important	;
+
+}
+
+.uc-final-content{
+padding: 20px
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+body{
+	max-width: 100%;
+	  background: url(../img/bg.jpg) no-repeat center center fixed !important; 
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+html, body{
+	max-width: 100%
+}
+
+}
+
+
+
+
+
+@media only screen and (min-height : 864px) and (max-height : 1100px) {
+
+body{ 
+    zoom: 95%;
+    -moz-transform: scale(0.95);
+}
+
+.containerVertical div, .containerHorizontal div  {
+zoom: 1.001;
+}
+
+}
+
+
+
+@media only screen and (min-height : 600px) and (max-height : 863px) {
+
+body{ 
+    zoom: 80%;
+    -moz-transform: scale(0.8);
+}
+
+.containerVertical div, .containerHorizontal div {
+zoom: 1.001;
+}
+
+}
+
+@media only screen and (min-height : 0px) and (max-height : 599px) {
+
+body{ 
+    zoom: 70%;
+    -moz-transform: scale(0.7);
+}
+
+.containerVertical div, .containerHorizontal div  {
+zoom: 1.001;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- LIGHTBOX -----------------------------------------*/
+/* line 7, ../sass/lightbox.sass */
+body:after {
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  display: none;
+}
+
+/* line 11, ../sass/lightbox.sass */
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+/* line 20, ../sass/lightbox.sass */
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+/* line 28, ../sass/lightbox.sass */
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 32, ../sass/lightbox.sass */
+.lightbox a img {
+  border: none;
+}
+
+/* line 35, ../sass/lightbox.sass */
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 44, ../sass/lightbox.sass */
+.lb-container {
+  padding: 4px;
+}
+
+/* line 47, ../sass/lightbox.sass */
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 56, ../sass/lightbox.sass */
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../img/loading.gif) no-repeat;
+}
+
+/* line 63, ../sass/lightbox.sass */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 71, ../sass/lightbox.sass */
+.lb-container > .nav {
+  left: 0;
+}
+
+/* line 74, ../sass/lightbox.sass */
+.lb-nav a {
+  outline: none;
+}
+
+/* line 77, ../sass/lightbox.sass */
+.lb-prev, .lb-next {
+  width: 49%;
+  height: 100%;
+  cursor: pointer;
+  /* Trick IE into showing hover */
+  display: block;
+}
+
+/* line 84, ../sass/lightbox.sass */
+.lb-prev {
+  left: 0;
+  float: left;
+}
+/* line 87, ../sass/lightbox.sass */
+.lb-prev:hover {
+  background: url(../img/prev.png) left 48% no-repeat;
+}
+
+/* line 90, ../sass/lightbox.sass */
+.lb-next {
+  right: 0;
+  float: right;
+}
+/* line 93, ../sass/lightbox.sass */
+.lb-next:hover {
+  background: url(../img/next.png) right 48% no-repeat;
+}
+
+/* line 96, ../sass/lightbox.sass */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 103, ../sass/lightbox.sass */
+.lb-data {
+  padding: 0 4px;
+  color: #bbbbbb;
+}
+/* line 106, ../sass/lightbox.sass */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+/* line 111, ../sass/lightbox.sass */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+/* line 115, ../sass/lightbox.sass */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+/* line 121, ../sass/lightbox.sass */
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../img/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 130, ../sass/lightbox.sass */
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/*----------------------------------------- LIGHTBOX -----------------------------------------*/

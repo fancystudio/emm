@@ -1,0 +1,514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-01 12:37+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: modules/pageContent/pageContent.class.php:113
+msgid "Account was created."
+msgstr "Konto bolo vytvorené."
+
+#: modules/pageContent/pageContent.class.php:113
+msgid "Your member ID is"
+msgstr "Bolo Vám pridelené nasledovné èíslo èlena:"
+
+#: modules/pageContent/pageContent.class.php:116
+msgid "Your profile was updated."
+msgstr "Vá¹ profil bol aktualizovaný."
+
+#: modules/pageContent/pageContent.class.php:124
+msgid "Login"
+msgstr "Prihlasovacie meno"
+
+#: modules/pageContent/pageContent.class.php:124
+msgid "Member ID"
+msgstr "Èíslo èlena"
+
+#: modules/pageContent/pageContent.class.php:134
+msgid "Password"
+msgstr "Heslo"
+
+#: modules/pageContent/pageContent.class.php:138
+msgid "Retype password"
+msgstr "Overovacie heslo"
+
+#: modules/pageContent/pageContent.class.php:142
+msgid "Personal data"
+msgstr "Osobné údaje"
+
+#: modules/pageContent/pageContent.class.php:145
+#: modules/pageContent/pageContent.class.php:254
+msgid "Name"
+msgstr "Meno"
+
+#: modules/pageContent/pageContent.class.php:254
+msgid "Company_name"
+msgstr "Názov"
+
+#: modules/pageContent/pageContent.class.php:149
+msgid "Surname"
+msgstr "Priezvisko"
+
+#: modules/pageContent/pageContent.class.php:153
+msgid "Title"
+msgstr "Titul"
+
+#: modules/pageContent/pageContent.class.php:157
+msgid "Work position"
+msgstr "Pracovná pozícia"
+
+#: modules/pageContent/pageContent.class.php:162
+#: modules/pageContent/pageContent.class.php:263
+msgid "Street"
+msgstr "Ulica"
+
+#: modules/pageContent/pageContent.class.php:166
+#: modules/pageContent/pageContent.class.php:267
+msgid "Number"
+msgstr "Èíslo"
+
+#: modules/pageContent/pageContent.class.php:170
+#: modules/pageContent/pageContent.class.php:271
+msgid "City"
+msgstr "Mesto"
+
+#: modules/pageContent/pageContent.class.php:174
+#: modules/pageContent/pageContent.class.php:275
+msgid "ZIP"
+msgstr "PSÈ"
+
+#: modules/pageContent/pageContent.class.php:178
+#: modules/pageContent/pageContent.class.php:279
+msgid "State"
+msgstr "©tát"
+
+#: modules/pageContent/pageContent.class.php:183
+msgid "E-mail"
+msgstr "E-mail"
+
+#: modules/pageContent/pageContent.class.php:187
+msgid "Phone"
+msgstr "Telefón"
+
+#: modules/pageContent/pageContent.class.php:191
+msgid "Fax"
+msgstr "Fax"
+
+#: modules/pageContent/pageContent.class.php:195
+msgid "Mobil phone"
+msgstr "Mobilný telefón"
+
+#: modules/pageContent/pageContent.class.php:200
+msgid "Birth date"
+msgstr "Dátum narodenia "
+
+#: modules/pageContent/pageContent.class.php:229
+msgid "Gender"
+msgstr "Pohlavie"
+
+#: modules/pageContent/pageContent.class.php:232
+msgid "man"
+msgstr "mu¾"
+
+#: modules/pageContent/pageContent.class.php:233
+msgid "woman"
+msgstr "¾ena"
+
+#: modules/pageContent/pageContent.class.php:238
+msgid "Member type"
+msgstr "Typ èlena"
+
+#: modules/pageContent/pageContent.class.php:251
+msgid "Company data"
+msgstr "Firemné údaje"
+
+#: modules/pageContent/pageContent.class.php:258
+msgid "ICO"
+msgstr "IÈO"
+
+#: modules/pageContent/pageContent.class.php:284
+msgid "Company type (professional focus)"
+msgstr "Profesijné zameranie spoloènosti"
+
+#: modules/pageContent/pageContent.class.php:287
+msgid "Gipsum systems"
+msgstr "suchá výstavba-systémy"
+
+#: modules/pageContent/pageContent.class.php:288
+msgid "Isolations"
+msgstr "EPS"
+
+#: modules/pageContent/pageContent.class.php:289
+msgid "Wall materials"
+msgstr "omietky"
+
+#: modules/pageContent/pageContent.class.php:294
+msgid "Marketing info"
+msgstr "Marketingové údaje"
+
+#: modules/pageContent/pageContent.class.php:297
+msgid "Where did you get the<br>registration form from?"
+msgstr "Odkiaµ ste získal<br>registraèný formulár?"
+
+#: modules/pageContent/pageContent.class.php:300
+msgid "Sales person"
+msgstr "OZ spoloènosti"
+
+#: modules/pageContent/pageContent.class.php:301
+msgid "Distribution partner"
+msgstr "distributér"
+
+#: modules/pageContent/pageContent.class.php:302
+msgid "By mail"
+msgstr "pri¹iel mi po¹tou"
+
+#: modules/pageContent/pageContent.class.php:303
+msgid "Other"
+msgstr "iné"
+
+#: modules/pageContent/pageContent.class.php:308
+msgid "Send"
+msgstr "Odosla»"
+
+#: modules/pageContent/pageContent.class.php:327
+msgid "Category"
+msgstr "Kategória"
+
+#: modules/pageContent/pageContent.class.php:329
+msgid "all"
+msgstr "v¹etky"
+
+#: modules/pageContent/pageContent.class.php:337
+msgid "Change"
+msgstr "Zmeni»"
+
+#: modules/pageContent/pageContent.class.php:346
+msgid "Pages"
+msgstr "Stránky"
+
+#: modules/pageContent/pageContent.class.php:388
+msgid "There are no items in selected category."
+msgstr "V tejto kategórii nie sú ¾iadne polo¾ky."
+
+#: modules/pageContent/pageContent.class.php:399
+#: modules/pageContent/pageContent.class.php:435
+msgid "points"
+msgstr "bodov"
+
+#: modules/pageContent/pageContent.class.php
+msgid "%s prod_point"
+msgid_plural "%s prod_points"
+msgstr[0] "bod"
+msgstr[1] "body"
+msgstr[2] "bodov"
+
+#: modules/pageContent/pageContent.class.php:421
+msgid "There are no items."
+msgstr "Zoznam neobsahuje ¾iadne polo¾ky."
+
+#: modules/pageContent/pageContent.class.php:434
+#msgid "For every"
+#msgstr "Za ka¾dých"
+msgid "%s for every"
+msgid_plural "%s for everys"
+msgstr[0] "za ka¾dý"
+msgstr[1] "za ka¾dé"
+msgstr[2] "za ka¾dých"
+
+
+#: modules/pageContent/pageContent.class.php:435
+msgid "you gain"
+msgstr "získate"
+
+#: modules/pageContent/pageContent.class.php:453
+msgid "You does not have any orders."
+msgstr "Nemáte ¾iadne objednávky."
+
+#: include/others.inc.php:7
+msgid "Close window"
+msgstr "Zavrie» okno"
+
+#: include/myrewards.class.php:88 include/myrewards.class.php:186
+msgid "No data was entered.<br>"
+msgstr "Neboli vlo¾ené ¾iadne údaje.<br>"
+
+#: include/myrewards.class.php:94 include/myrewards.class.php:196
+msgid "Passwords have to be the same.<br>"
+msgstr "Heslá musia by» rovnaké.<br>"
+
+#: include/myrewards.class.php:99 include/myrewards.class.php:201
+msgid "Password has to be above 4 characters.<br>"
+msgstr "Heslo musí by» dlh¹ie ako 4 znaky.<br>"
+
+#: include/myrewards.class.php:103 include/myrewards.class.php:205
+msgid "You have to enter Name.<br>"
+msgstr "Musíte vlo¾i» Meno.<br>"
+
+#: include/myrewards.class.php:104 include/myrewards.class.php:206
+msgid "You have to enter Surname.<br>"
+msgstr "Musíte vlo¾i» Priezvisko.<br>"
+
+#: include/myrewards.class.php:105 include/myrewards.class.php:207
+msgid "You have to enter Member type.<br>"
+msgstr "Musíte vlo¾i» Typ èlena.<br>"
+
+#: include/myrewards.class.php:107 include/myrewards.class.php:209
+msgid "You have to enter Street.<br>"
+msgstr "Musíte vlo¾i» Ulicu.<br>"
+
+#: include/myrewards.class.php:108 include/myrewards.class.php:210
+msgid "You have to enter Street number.<br>"
+msgstr "Musíte vlo¾i» Èíslo domu.<br>"
+
+#: include/myrewards.class.php:109 include/myrewards.class.php:211
+msgid "You have to enter City.<br>"
+msgstr "Musíte vlo¾i» Mesto.<br>"
+
+#: include/myrewards.class.php:110 include/myrewards.class.php:212
+msgid "You have to enter ZIP.<br>"
+msgstr "Musíte vlo¾i» PSÈ.<br>"
+
+#: include/myrewards.class.php:111 include/myrewards.class.php:213
+msgid "You have to enter State.<br>"
+msgstr "Musíte vlo¾i» ©tát.<br>"
+
+#: include/myrewards.class.php:112 include/myrewards.class.php:214
+msgid "You have to enter E-mail.<br>"
+msgstr "Musíte vlo¾i» E-mailovú adresu.<br>"
+
+#: include/myrewards.class.php:113 include/myrewards.class.php:215
+msgid "You have to enter Phone.<br>"
+msgstr "Musíte vlo¾i» Èíslo telefónu.<br>"
+
+#: include/myrewards.class.php:114 include/myrewards.class.php:216
+msgid "You have to enter Gender.<br>"
+msgstr "Musíte vybra» Pohlavie.<br>"
+
+#: include/myrewards.class.php:116 include/myrewards.class.php:218
+msgid "You have to enter Work position.<br>"
+msgstr "Musíte vlo¾i» Pracovnú pozíciu.<br>"
+
+#: include/myrewards.class.php:117 include/myrewards.class.php:219
+msgid "You have to enter Company name.<br>"
+msgstr "Musíte vlo¾i» Meno spoloènosti.<br>"
+
+#: include/myrewards.class.php:118 include/myrewards.class.php:220
+msgid "You have to enter Company ICO.<br>"
+msgstr "Musíte vlo¾i» IÈO spoloènosti.<br>"
+
+#: include/myrewards.class.php:119 include/myrewards.class.php:221
+msgid "You have to enter Company street.<br>"
+msgstr "Musíte vlo¾i» Ulicu spoloènost.<br>"
+
+#: include/myrewards.class.php:120 include/myrewards.class.php:222
+msgid "You have to enter Company street number.<br>"
+msgstr "Musíte vlo¾i» Èíslo ulice spoloènosti.<br>"
+
+#: include/myrewards.class.php:121 include/myrewards.class.php:223
+msgid "You have to enter Company city.<br>"
+msgstr "Musíte vlo¾i» Mesto spoloènosti.<br>"
+
+#: include/myrewards.class.php:122 include/myrewards.class.php:224
+msgid "You have to enter Company ZIP.<br>"
+msgstr "Musíte vlo¾ir PSÈ spoloènosti.<br>"
+
+#: include/myrewards.class.php:123 include/myrewards.class.php:225
+msgid "You have to enter Company State.<br>"
+msgstr "Musíte vlo¾i» ©tát spolocnosti.<br>"
+
+#: include/myrewards.class.php:124 include/myrewards.class.php:226
+msgid "You have to enter Company type.<br>"
+msgstr "Musíte vlo¾i» Profesijné zameranie spoloènosti.<br>"
+
+#: include/myrewards.class.php:174
+msgid "There was error by changing profile. Contact infoline operator, please.<br>"
+msgstr "V systéme nastala chyba pri zmene profilu. Kontaktujte operátor na infolinke prosím.<br>"
+
+#: include/myrewards.class.php:192
+msgid "Login has to be above 4 characters.<br>"
+msgstr "Prihlasovacie meno musí by» dlh¹ie ako 4 písmená.<br>"
+
+#: include/myrewards.class.php:245
+msgid "Error by checking login.<br>"
+msgstr "Pri kontróle prihlasovacieho mena nastala chyba.<br>"
+
+#: include/myrewards.class.php:250
+msgid "There are same Login. You have to choose a different one.<br>"
+msgstr "Zadané prihlasovacie meno sa v systéme u¾ nachádza. Zvolte si iné prosím.<br>"
+
+#: include/myrewards.class.php:264
+msgid "Error by generating member ID.<br>"
+msgstr "Pri generovaní identifikaèného èísla èlena programu nastala chyba.<br>"
+
+#: include/myrewards.class.php:285
+msgid "Error by checking activation promotion.<br>"
+msgstr "Pri kontróle aktivaèného bonusu nastala chyba.<br>"
+
+#: include/myrewards.class.php:343
+msgid "There was error by creating account. Contact infoline operator, please.<br>"
+msgstr "Pri vytváraní konta nastala chyba. Kontaktujte operátor na infolinke prosím.<br>"
+
+#: include/auth.class.php:all
+msgid "00001"
+msgstr "Nieje mo¾né overi» prihlasovacie údaje."
+
+msgid "00002"
+msgstr "Konto neexistuje."
+
+msgid "00003"
+msgstr "Va¹e konto bolo zablokované na 24 hodín po 3 neúspe¹ných pokusoch o prihlásenie."
+
+msgid "00004"
+msgstr "Prihlásenie prebehlo úspe¹ne."
+
+msgid "00005"
+msgstr "Boli ste automaticky odhláseny."
+
+msgid "00006"
+msgstr "Va¹e konto bolo zablokované na 24 hodín po 3 neúspe¹ných pokusoch o prihlásenie."
+
+msgid "00007"
+msgstr "Vlo¾ili ste nesprávne prihlasovacie údaje."
+
+
+msgid "You have to insert street number."
+msgstr "Musíte vlo¾i» èíslo ulice v èíselnej forme."
+
+msgid "You have to insert company ZIP in correct format."
+msgstr "Musíte vlo¾i» PSÈ v èíselnej forme."
+
+msgid "You have to insert company street number in correct format."
+msgstr "Musíte vlo¾i» èíslo ulice spoloènosti v èíselnej forme."
+
+msgid "You have to insert company ICO in correct format."
+msgstr "IÈO musí tvori» minimálne 8 èíslic."
+
+msgid "You have to insert mobil phone number in correct format."
+msgstr "Èíslo mobilného telefónu musí tvori» minimálne 9 èíslic."
+
+msgid "You have to insert fax number in correct format."
+msgstr "Èíslo faxu musí tvori» minimálne 6 èíslic."
+
+msgid "You have to insert phone number in correct format."
+msgstr "Èíslo telefónu musí tvori» minimálne 6 èíslic."
+
+msgid "You have to insert ZIP in correct format."
+msgstr "Musíte vlo¾i» PSÈ v správnej forme."
+
+msgid "year"
+msgstr "rok"
+
+msgid "month"
+msgstr "mesiac"
+
+msgid "day"
+msgstr "deò"
+
+msgid "selectval"
+msgstr "vybra»"
+
+msgid "show cart"
+msgstr "zobrazi» ko¹ík"
+
+msgid "add to cart"
+msgstr "vlo¾i» do ko¹íku"
+
+msgid "Cart is empty"
+msgstr "Ko¹ík je prázdny."
+
+msgid "Cart count"
+msgstr "Poèet"
+
+msgid "Cart name"
+msgstr "Meno"
+
+msgid "Cart price"
+msgstr "Body"
+
+msgid "Item was add in to the cart."
+msgstr "Odmena bola ulo¾ená do ko¹íku."
+
+msgid "Together"
+msgstr "Spolu"
+
+msgid "To send order, you have to log in at first."
+msgstr "Pre odoslanie objednávky sa musíte prihlási»."
+
+msgid "You does not have enough points to send order."
+msgstr "Nemáte dostatok bodov k odoslaniu objednávky."
+
+msgid "Cart content"
+msgstr "Obsah ko¹íku"
+
+msgid "You obtain points for every purchase of our products"
+msgstr "Za ka¾dý nákup na¹ich produktov získavate body"
+
+msgid "delete"
+msgstr "vymaza»"
+
+msgid "Item was deleted from the cart."
+msgstr "Polo¾ka bola vymazaná."
+
+msgid "Delivery address"
+msgstr "Dodacia adresa"
+
+msgid "Contact e-mail"
+msgstr "Kontaktný e-mail"
+
+msgid "Contact phone"
+msgstr "Kontaktný telefón"
+
+msgid "Note"
+msgstr "Poznámka"
+
+msgid "Order was sended."
+msgstr "Objednávka bola odoslaná."
+
+msgid "Error by saving data."
+msgstr "Chyba pri ukladaní dát."
+
+msgid "Error by retrieving product data."
+msgstr "Chyba pri príjmaní údajov o produkte."
+
+msgid "Date"
+msgstr "Dátum"
+
+msgid "Items count"
+msgstr "Poèet polo¾iek"
+
+msgid "Points sum"
+msgstr "Suma bodov"
+
+msgid "Order detail"
+msgstr "Detail objednávky"
+
+msgid "Order items"
+msgstr "Polo¾ky objednávky"
+
+msgid "Count"
+msgstr "Poèet"
+
+msgid "Points pre piece"
+msgstr "Body za ks"
+
+msgid "Sum"
+msgstr "Spolu"
+
+msgid "Back to My orders"
+msgstr "Spä» do Mojich objednávok"
+
+msgid "most_frequently_buying"
+msgstr "Od koho najèastej¹ie nakupujete výrobky Icopal"

@@ -1,0 +1,72 @@
+#main
+{
+	text-align: left
+}
+form{padding: 0px; margin: 0px}
+.form_table tr,td{
+	color: #343399;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 12px;
+	line-height: 30px;
+}
+.zoznam_table tr,td{
+	color: #343399;
+	font-family: verdana;
+	font-size: 10px;
+	line-height: normal;
+	font-weight: normal;
+}
+.zoznam_table tr:hover{
+	background-color: #dddddd;
+}
+.zoznam_table th{
+	color: #A9AAAB;
+	background-color: #dddddd;
+	height: 25px;
+}
+
+input,textarea,select{
+	border: 1px solid #343399
+}
+.input_t{
+	border: 0px none;
+}
+
+.inputs {
+	padding-bottom:55px;
+}
+.inputs .formInputs a{display:inline;}
+.inputs .formInputs input{margin-left:5px;}
+.inputs .formInputs{margin:5px; padding:3px; display:block;}
+img{border:0;}
+.overFlowAdds{width:800px;}
+h3{margin:10px 0 2px;}
+.oddBg{background-color:#FFFFD9;}
+
+.oznam{
+	width: 900px;
+	border: 1px solid #F18E00;
+	background: #D4D0C8;
+	margin: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.menu_form a{
+	display: block;
+	color: #FFFFFF;
+	font-weight: bold;
+	float: left;
+	width: 150px;
+	height: 18px;
+	padding-left: 5px
+}
+.menu_form a:hover{
+	text-decoration: none;
+	background: orange;
+	height: 18px;
+	color: #FFFFFF;
+}
+.menu_form a:visited{
+	color: #FFFFFF;
+}

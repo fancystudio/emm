@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="author" content="netropolis s.r.o." />
+		<meta name="keywords" content="{searchEngine_keywords}" />
+		<meta name="description" content="{meta_description}" />
+
+		<link rel="STYLESHEET" href="/style/default.css" type="text/css" />
+		<link rel="STYLESHEET" href="/style/menu.css" type="text/css" />
+		
+		<title>{titlePath} - EMM, spol. s r.o.</title>
+		
+		<link href="/include/flexscrollstyles/flexcrollstyles.css" rel="stylesheet" type="text/css" />
+		<script type='text/javascript' src="/include/flexscrollstyles/flexcroll.js"></script>
+		
+		<script type="text/javascript" src="/include/js/swfobject.js"></script>
+		<!--
+		<script type="text/javascript" src="/include/js/scroller.js"></script>
+    	<link rel="STYLESHEET" href="/style/scroller.css" type="text/css" />
+		
+		-->
+    	<!--[if IE]>
+			
+			<link rel="STYLESHEET" href="/style/ie-menu.css" type="text/css" />
+		<![endif]-->
+
+ 		<script type="text/javascript" src="/include/js/dom-drag.js"></script>
+	</head>
+
+<body>
+
+<center>
+
+
+<div class="floater">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td id="leftLogo">
+			&nbsp;
+		</td>
+		<td width="960" id="middleLogo">
+			
+			<div id="content">
+
+				<div id="header">
+				
+					<div id="header-left">
+						<a href="http://www.emm.sk"><img src="/pics/logo_emm.gif" border="0" alt="EMM logo" /></a>
+					</div>
+					<div id="header-right">
+						<a href="/sk/o-spolocnosti/system-manazerstva-kvality/"><img src="/pics/astra-ia.gif" border="0" alt="ISO 14001" /></a>
+						<a href="/sk/o-spolocnosti/system-manazerstva-kvality/"><img src="/pics/logo_right.gif" border="0" alt="ISO 9001" /></a>
+            <a href="/sk/o-spolocnosti/system-manazerstva-kvality/"><img src="/pics/iso_27001.gif" border="0" alt="ISO 27001" /></a>
+					</div>
+					<div class="clear"></div>
+					
+				</div>
+				
+				<div id="header-flash">
+				
+					<script type="text/javascript">
+					   var so = new SWFObject("/pics/flashnew.swf", "intro", "960", "48", "6.05", "#000000");
+					   so.addParam("wmode", "transparent");
+					   so.write("header-flash");         
+					</script>
+				</div>
+				
+					<div id="drop-down-menu">
+						<div class="prazdno"></div>
+
+            <div id="main_menu">
+              {module topMenu}
+            </div>
+
+						<div class="vlajky">
+							<a href="/sk/"><img src="/pics/vlajka_svk.gif" border="none" alt="Po Slovensky" /></a>
+							<a href="/en/"><img src="/pics/vlajka_uk.gif" border="none"  alt="In English" style="margin-left: 15px" /></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+					
+					<div id="main" style="margin-top: 25px">
+						<div id="main-form">
+							{module pageContent}
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+		
+		</td>
+		<td id="rightLogo">
+			&nbsp;
+		</td>
+	</tr>
+</table>
+
+
+	<br>
+	
+	
+	
+	<div id="paticka" class="clear">
+		<div id="patickaborder">
+			<div id="paticka-left">
+				<a href="/sk/podmienky-pouzivania/" title="Podmienky používania">Podmienky používania</a>
+				<br><a href="/sk/zasady-osobnych-udajov/" title="Zásady ochrany osobných údajov">Zásady ochrany osobných údajov</a>
+				<br>(c) EMM, spol. s r.o.
+			</div>
+			<div id="paticka-right">
+				<div class="telfax">
+					Telefón a Fax:<br>
+					tel.: <b>+421 (2) 602 54 111</b><br>
+					fax.: <b>+421 (2) 602 54 901</b>
+				</div>
+				<div class="telfax_r">
+					Elektronická pošta:<br>
+					emm@emm.sk<br>
+					webmaster@emm.sk
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>	
+	</div>
+
+</div>
+
+
+<div class="clear"></div>
+<div id="ciara_dole">
+	</div>
+
+</center>
+{module googleAnalytics}
+</body>
+</html>

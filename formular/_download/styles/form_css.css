@@ -1,0 +1,24 @@
+.table_form tr,td{
+	color: #343399;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 12px;
+	line-height: 30px;
+}
+table input,textarea,select{
+	border: 1px solid #343399
+}
+.input_t{
+	border: 0px none;
+}
+
+.inputs {
+	padding-bottom:55px;
+}
+.inputs .formInputs a{display:inline;}
+.inputs .formInputs input{margin-left:5px;}
+.inputs .formInputs{margin:5px; padding:3px; display:block;}
+img{border:0;}
+.overFlowAdds{width:800px;}
+h3{margin:10px 0 2px;}
+.oddBg{background-color:#FFFFD9;}

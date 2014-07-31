@@ -1,0 +1,1 @@
+user:<?php echo str_replace(':', '', $form->meno); ?>:<?php echo str_replace(':', '', $form->email); ?>:<?php echo str_replace(':', '', $form->adresa); ?>:<?php echo str_replace(':', '', $form->mesto); ?>:<?php echo str_replace(':', '', $form->psc); ?>:<?php echo str_replace(':', '', $form->stat); ?>:<?php echo str_replace(':', '', $form->telefon); ?>
