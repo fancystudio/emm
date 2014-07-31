@@ -112,7 +112,7 @@ function smarty_function_index_boxes($params, &$template)
 				</div>  
 				<div class="outside">
 					<span id="slider-prev" class="inactive">← novšie</span>
-					<a class="bx-archiv" href="#">Archív</a>
+					<a class="bx-archiv" href="javascript:void(0)">Archív</a>
 					<span id="slider-next">staršie →</span>
 				</div>    	
 			</div>

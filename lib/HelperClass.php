@@ -16,7 +16,7 @@ class Helper
 		$firstYear = true;
 		$historyArchive .= "<ul class='yearsList nav nav-pills'>";
 		foreach($allYears as $year){
-			$historyArchive .= "<li><a href='javascript:void(0)' id='year".$year."' class='".($firstYear ? "active" : "")."' onclick='showArchiveYear(this)'>".$year."</a></li>";
+			$historyArchive .= "<li><a href='javascript:void(0)' id='year".$year."' class='".($firstYear ? "active" : "")."' name='history' onclick='showArchiveYear(this)'>".$year."</a></li>";
 			$firstYear = false;
 		}
 		$historyArchive .= "</ul>";
@@ -55,7 +55,7 @@ class Helper
 		$firstYear = true;
 		foreach($allYears as $year){
 			if($year < date("Y")){
-				$newsArchive .= "<li><a href='javascript:void(0)' id='year".$year."'  class='".($firstYear ? "active" : "")."' onclick='showArchiveYear(this)'>".$year."</a></li>";
+				$newsArchive .= "<li><a href='javascript:void(0)' id='year".$year."' name='news' class='".($firstYear ? "active" : "")."' onclick='showArchiveYear(this)'>".$year."</a></li>";
 				$firstYear = false;
 			}
 		}

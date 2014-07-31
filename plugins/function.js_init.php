@@ -55,7 +55,8 @@ function smarty_function_js_init($params, &$template)
 		  }
 
 			$(".main-menu li a,.menuThirdLevelBuild li a,.index-boxes.not-news li a, .fakeContent .newpage, .selflink").click(function(){
-				if(!animationInProgress){	
+				if(!animationInProgress){
+					window.location.hash = "";
 					if(!hasIndexBoxesShow && !$(".submenu-aktuality").hasClass("disable4")){
 						$(".submenu-aktuality").removeClass("enable4");
 						$(".submenu-aktuality").addClass("disable4");
@@ -217,6 +218,7 @@ function smarty_function_js_init($params, &$template)
 
 		$(".logo").click(function(){ //ked sa klikne na hlavne logo tak sa vysunu index boxi a skryje obsah
 			if(!animationInProgress && !hasIndexBoxesShow){
+				window.location.hash = "";
 				hasIndexBoxesShow = true;
 				if(hasPerspective){
 					animationInProgress = true;
@@ -347,6 +349,7 @@ function smarty_function_js_init($params, &$template)
 				$(".main-menu li a,.main-menu li,.menuThirdLevelBuild li a,.menuThirdLevelBuild li").removeClass("active");
 			}
 		});
+		showSubPageByHash();
 	});
 	function rollNewPage(object,linktype){
 		if($(object).attr("content_id") != -1){
@@ -457,8 +460,10 @@ function smarty_function_js_init($params, &$template)
 			}
 			$(".firstLevel li a,.firstLevel li,.secondLevel li").removeClass("active");
 			if($(object).attr("class") == "bx-archiv"){
+				getLinkToSubPage("newsArchive", null);
 				contentId = -1;
 			}else{
+				getLinkToSubPage("news", $(object).attr("news_id"));
 				contentId = $(object).attr("news_id");
 			}
 			actualTypeOfContent = "news";
@@ -541,10 +546,16 @@ function smarty_function_js_init($params, &$template)
 		}
 	}
 	function getContent(content_id,hasFourCubesHorizontal,isNews){
-		console.log("showNewContent");
 		if(contentIsLoad && $(".boxHorizontal").css("visibility") != "hidden"){
 			hideOldContent("content",content_id,hasFourCubesHorizontal,isNews); //parameter true pre zobrazenie index boxov po skryti obsahu
 		}else{
+			if(!isNews){
+				if(content_id == 65){
+					getLinkToSubPage("history", null);
+				}else{
+					getLinkToSubPage("content", content_id);
+				}
+			}
 			if(hasPerspective){
 				$( ".animacia .containerHorizontal" ).load( "lib/getContent.php", 
 					{ 
@@ -716,6 +727,13 @@ function smarty_function_js_init($params, &$template)
         	  contentIsLoad = true;
         	  $('.horizontal-box-1').css("visibility","hidden");
         	  if(contentType == "content"){
+	        	  if(!isNews){
+	      			if(content_id == 65){
+	      				getLinkToSubPage("history", null);
+	      			}else{
+	      				getLinkToSubPage("content", content_id);
+	      			}
+	        	  }
         		  $( ".animacia .containerHorizontal" ).load( "lib/getContent.php", 
       					{ 
       						content_id : content_id, 
@@ -913,6 +931,13 @@ function smarty_function_js_init($params, &$template)
 				if(($(".submenu-aktuality").css("display") == "block") && !isNews){
 					$(".submenu-aktuality").fadeOut(500);
 				}
+				if(!isNews){
+					if(content_id == 65){
+						getLinkToSubPage("history", null);
+	      			}else{
+	      				getLinkToSubPage("content", content_id);
+					}
+				}
 				$( ".animacia .containerHorizontal" ).load( "lib/getContent.php", 
 					{ 
 						content_id : content_id, 
@@ -965,7 +990,6 @@ function smarty_function_js_init($params, &$template)
         	  	  $('.vertical-box-' + (verticalIteration-1) + '-' + rowAnimated + ' .backVertical').css("background-image","url(img/front.jpg)");
         		  hideVerticalCube(verticalIteration-1,verticalCubesCount,rowAnimated,contentType,content_id,hasFourCubesHorizontal,isNews);
         		  if(rowAnimated == 1 && verticalIteration == 1){
-            		  
 					hideHorizontalCube(contentType,content_id,hasFourCubesHorizontal,isNews);
               	  }
             	}
@@ -1093,14 +1117,25 @@ function smarty_function_js_init($params, &$template)
           	}
 		}
 	}
-	function showArchiveYear(object){
-		console.log(object);
+	function showArchiveYear(object, byHash){
 		if(!$(object).hasClass("active")){
+			if($(object).attr("name") == "news"){
+				getLinkToSubPage("newsYear", $(object).attr("id"));
+			}else if($(object).attr("name") == "history"){
+				getLinkToSubPage("historyYear", $(object).attr("id"));
+			}
 			$("." + $(".yearsList li").find(".active").attr("id")).fadeOut(500,function(){
 	        	$(".archiveYear " + "." + $(object).attr("id")).fadeIn(500);
 	        	$(".yearsList li a").removeClass("active");
 	    		$(".yearsList li").find("#" + $(object).attr("id")).addClass("active");
 	        });
+	        if(byHash == true){
+	        	$(".historyYearContent").eq(0).fadeOut(500,function(){
+		        	$(".archiveYear " + "." + $(object).attr("id")).fadeIn(500);
+		        	$(".yearsList li a").removeClass("active");
+		    		$(".yearsList li").find("#" + $(object).attr("id")).addClass("active");
+	        	});
+        	}
 		}
 	}
 	function isIE() {
@@ -1146,6 +1181,45 @@ function smarty_function_js_init($params, &$template)
 				$(this).attr("onclick","rollNewPage(this,'selflink')");
 			});
 		});
+	}
+	function getLinkToSubPage(type, typeId){
+		window.location.hash = type + ((typeId != null) ? "-" + typeId : "");
+	}
+	function showSubPageByHash(){
+		hash = window.location.hash.substring(1);
+		hashSplited = hash.split("-");
+		if(hashSplited[0] == "content" && hashSplited[1] != undefined){
+			rollNewPage('<a href="javascript:void(0)" content_id="' + hashSplited[1] + '" has_child="0" class="' + ((hashSplited[1] == 61) ? "kontakt" : "unnamed") + '"></a>',"menulink");
+		}else if(hashSplited[0] == "history" && hashSplited[1] == undefined){
+			rollNewPage('<a href="javascript:void(0)" content_id="65" has_child="0" class="historia"></a>',"menulink");
+		}else if(hashSplited[0] == "historyYear" && hashSplited[1] != undefined){
+			rollNewPage('<a href="javascript:void(0)" content_id="65" has_child="0" class="historia"></a>',"menulink");
+			controlHistoryYearAndChange(hashSplited[1], "history");
+		}else if(hashSplited[0] == "newsArchive" && hashSplited[1] == undefined){
+			zobrazNovinku('<a class="bx-archiv" href="javascript:void(0)"></a>');
+		}else if(hashSplited[0] == "newsYear" && hashSplited[1] != undefined){
+			zobrazNovinku('<a class="bx-archiv" href="javascript:void(0)"></a>');
+			controlHistoryYearAndChange(hashSplited[1], "news");
+		}else if(hashSplited[0] == "news" && hashSplited[1] != undefined){
+			zobrazNovinku('<a href="javascript:void(0)" news_id="' + hashSplited[1] + '"></a>');
+		}
+	}
+	function controlHistoryYearAndChange(yearString, type){
+		setTimeout(function(){
+			if(type == "history"){
+				if($(".historyYearContent").eq(0).height() != null || $(".historyYearContent").eq(0).height() != undefined){
+					showArchiveYear('<a href="javascript:void(0)" id="' + yearString + '" name="history"></a>');
+				}else{
+					controlHistoryYearAndChange(yearString, type);
+				}
+			}else{
+				if($(".archiveYear ul").eq(0).hasClass("active")){
+					showArchiveYear('<a href="javascript:void(0)" id="' + yearString + '" name="news"></a>');
+				}else{
+					controlHistoryYearAndChange(yearString, type);
+				}
+			}
+		}, 500);
 	}
 	</script>
 	<?php
