@@ -1189,8 +1189,10 @@ function smarty_function_js_init($params, &$template)
 		hash = window.location.hash.substring(1);
 		hashSplited = hash.split("-");
 		if(hashSplited[0] == "content" && hashSplited[1] != undefined){
+			showMenuOfSubpage(hashSplited[1]);
 			rollNewPage('<a href="javascript:void(0)" content_id="' + hashSplited[1] + '" has_child="0" class="' + ((hashSplited[1] == 61) ? "kontakt" : "unnamed") + '"></a>',"menulink");
 		}else if(hashSplited[0] == "history" && hashSplited[1] == undefined){
+			showMenuOfSubpage(65);
 			rollNewPage('<a href="javascript:void(0)" content_id="65" has_child="0" class="historia"></a>',"menulink");
 		}else if(hashSplited[0] == "historyYear" && hashSplited[1] != undefined){
 			rollNewPage('<a href="javascript:void(0)" content_id="65" has_child="0" class="historia"></a>',"menulink");
@@ -1220,6 +1222,49 @@ function smarty_function_js_init($params, &$template)
 				}
 			}
 		}, 500);
+	}
+	function showMenuOfSubpage(contentId){
+		firstLevelClass = null;
+		secondLevelClass = null;
+		thirdLevelClass = null;
+		$(".menuSecondLevel .te-transition .te-front ul li").each(function( index ) {
+			if($( "a", this ).attr("content_id") == contentId){
+				secondLevelClass = $( "a", this ).attr("class");
+				classList = $( "a", this ).parents(".te-front").attr("class").split(/\s+/);
+				firstLevelClass = classList[0];
+			}
+		});
+		if(firstLevelClass == null){
+			$(".menuThirdLevelBuild .menuThirdLevel").each(function( index ) {
+				$(".menuVertical:eq(0) .backVertical .thirdLevel li", this).each(function( index ) {
+					if($( "a", this ).attr("content_id") == contentId){
+						thirdLevelClass = $( "a", this ).attr("class");
+						classList = $( "a", this ).parents(".menuThirdLevel").attr("class").split(/\s+/);
+						secondLevelClass = classList[1];
+						$(".menuSecondLevel .te-transition .te-front ul li").each(function( index ) {
+							if($( "a", this ).attr("class") == secondLevelClass){
+								classList = $( "a", this ).parents(".te-front").attr("class").split(/\s+/);
+								firstLevelClass = classList[0];
+							}
+						});
+					}
+				});
+			});
+		}
+		if(firstLevelClass != null){
+			$("." + firstLevelClass + ".te-transition").addClass("te-rotation4");
+			$("." + firstLevelClass + ".te-transition").addClass("te-show");
+			$("." + firstLevelClass + ".te-front").hide();
+			$("." + firstLevelClass + ".te-back").show();
+			$oldFirstLevelMenu = $("." + firstLevelClass);
+			actualFirstLevelMenu = $("." + firstLevelClass).attr("class");
+			$("." + firstLevelClass).addClass("active");
+			$("." + firstLevelClass).parent().addClass("active");
+			$("." + secondLevelClass).parent().addClass("active");
+			if(thirdLevelClass != null){
+				animateThirdLevel(secondLevelClass);
+			}
+		}
 	}
 	</script>
 	<?php
