@@ -86,4 +86,18 @@ class Helper
 		$newsArchive .= "</div>";
 		return $newsArchive;
 	}
+	function checkContent($db, $contentType, $contentId){
+		if($contentType == "news"){
+			$queryString = "SELECT 88 FROM cms_module_news where news_id = ? and news_category_id = 1";
+		}elseif($contentType == "content"){
+			$queryString = "SELECT 88 FROM cms_content where content_id = ?";
+		}
+		$sqlQueryContent = $queryString;
+		$resContent = $db->prepare($sqlQueryContent);
+		$resContent->execute(array($contentId));
+		while ($row = $resContent->fetch(PDO::FETCH_OBJ)){
+			return true;
+		}
+		return false;
+	}
 }

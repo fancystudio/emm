@@ -1189,8 +1189,7 @@ function smarty_function_js_init($params, &$template)
 		hash = window.location.hash.substring(1);
 		hashSplited = hash.split("-");
 		if(hashSplited[0] == "content" && hashSplited[1] != undefined){
-			showMenuOfSubpage(hashSplited[1]);
-			rollNewPage('<a href="javascript:void(0)" content_id="' + hashSplited[1] + '" has_child="0" class="' + ((hashSplited[1] == 61) ? "kontakt" : "unnamed") + '"></a>',"menulink");
+			checkIfContentExistAndShow(hashSplited[1], "content");
 		}else if(hashSplited[0] == "history" && hashSplited[1] == undefined){
 			showMenuOfSubpage(65);
 			rollNewPage('<a href="javascript:void(0)" content_id="65" has_child="0" class="historia"></a>',"menulink");
@@ -1203,7 +1202,7 @@ function smarty_function_js_init($params, &$template)
 			zobrazNovinku('<a class="bx-archiv" href="javascript:void(0)"></a>');
 			controlHistoryYearAndChange(hashSplited[1], "news");
 		}else if(hashSplited[0] == "news" && hashSplited[1] != undefined){
-			zobrazNovinku('<a href="javascript:void(0)" news_id="' + hashSplited[1] + '"></a>');
+			checkIfContentExistAndShow(hashSplited[1], "news");
 		}
 	}
 	function controlHistoryYearAndChange(yearString, type){
@@ -1265,6 +1264,37 @@ function smarty_function_js_init($params, &$template)
 				animateThirdLevel(secondLevelClass);
 			}
 		}
+	}
+	function checkIfContentExistAndShow(contentId, contentType){
+		$.ajax({
+			type: "POST",
+			url: "lib/checkContent.php",
+			data: {
+				contentId: contentId,
+				contentType: contentType
+			},
+			beforeSend: function(){
+				//sem dat gifko
+			},
+			success: function(response){
+				if(response.status == 'success'){
+					if(response.contentIsExist){
+						if(contentType == "content"){
+							console.log(contentId);
+							showMenuOfSubpage(contentId);
+							rollNewPage('<a href="javascript:void(0)" content_id="' + contentId + '" has_child="0" class="' + ((contentId == 61) ? "kontakt" : "unnamed") + '"></a>',"menulink");
+						}
+						if(contentType == "news"){
+							console.log(contentId);
+							zobrazNovinku('<a href="javascript:void(0)" news_id="' + contentId + '"></a>');
+						}
+					}
+				}     
+			},
+			error: function(response){
+				alert("Obsah sa nepodarilo načítať");
+			}
+		});
 	}
 	</script>
 	<?php
