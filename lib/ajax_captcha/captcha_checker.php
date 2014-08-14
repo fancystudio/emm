@@ -5,6 +5,7 @@
 * Email: info@vasplus.info
 * Please, do not remove this information from the top of this page.
 *********************************************************************************************************************/
+include_once('../../lib/XPM2/smtp.php');
 session_start();
 if(empty($_SESSION['vpb_captcha_code']) || strcasecmp($_SESSION['vpb_captcha_code'], $_POST['vpb_captcha_code']) != 0)
 {
@@ -15,7 +16,7 @@ else
 	$mailInfo = "<table>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "nazovFirmy";
+			$mailInfo .=  "Názov Firmy";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['nazovFirmy'];
@@ -23,7 +24,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "cisloZmluvy";
+			$mailInfo .=  "Číslo Zmluvy";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['cisloZmluvy'];
@@ -31,7 +32,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "nahlasovatel";
+			$mailInfo .=  "Nahlasovatel";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['nahlasovatel'];
@@ -39,7 +40,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "telFax";
+			$mailInfo .=  "Tel./Fax";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['telFax'];
@@ -47,7 +48,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "email";
+			$mailInfo .=  "Email";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['email'];
@@ -55,7 +56,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "typProblemu";
+			$mailInfo .=  "Typ Problému";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['typProblemu'];
@@ -63,7 +64,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "moznyCasZasahu";
+			$mailInfo .=  "Mozný Čas Zásahu";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['moznyCasZasahu'];
@@ -71,7 +72,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "nazovTyp";
+			$mailInfo .=  "Názov/Typ";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['nazovTyp'];
@@ -79,7 +80,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "vyrobneCislo";
+			$mailInfo .=  "Výrobne Číslo";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['vyrobneCislo'];
@@ -87,7 +88,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "datumDodania";
+			$mailInfo .=  "Dátum Dodania";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['datumDodania'];
@@ -95,7 +96,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "verzia";
+			$mailInfo .=  "Verzia";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['verzia'];
@@ -103,7 +104,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "produktVZaruke";
+			$mailInfo .=  "Produkt v Záruke";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['produktVZaruke'];
@@ -111,7 +112,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "popisProblemuArea";
+			$mailInfo .=  "Popis Problému";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['popisProblemuArea'];
@@ -119,7 +120,7 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "adrsaProduktu";
+			$mailInfo .=  "Adresa Produktu";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['adrsaProduktu'];
@@ -127,24 +128,28 @@ else
 		$mailInfo .= "</tr>";
 		$mailInfo .= "<tr>";
 			$mailInfo .= "<td>";
-			$mailInfo .=  "priorita";
+			$mailInfo .=  "Priorita";
 			$mailInfo .= "</td>";
 			$mailInfo .= "<td>";
 			$mailInfo .=  $_POST['priorita'];
 			$mailInfo .= "</td>";
 		$mailInfo .= "</tr>";
-		$mailInfo .= "<tr>";
-			$mailInfo .= "<td>";
-			$mailInfo .=  "prijemca";
-			$mailInfo .= "</td>";
-			$mailInfo .= "<td>";
-			$mailInfo .=  $_POST['prijemca'];
-			$mailInfo .= "</td>";
-		$mailInfo .= "</tr>";
 	$mailInfo .= "</table>";
 
-	//mail("info@fancystudio.sk","test",$mailInfo,"From:info@fancystudio.sk \r\n") //dorobit na hostingu
-	if(true){
+	$mail = new SMTP;
+	$from = "server@emm.sk";
+	$mail->Delivery('relay');
+	@$mail->Relay('mail.netropolis.sk', 'emm-smtp@office.netropolis.sk', 'kafj48zk214', 465, 'autodetect', 'ssl');
+	@$mail->From($from);
+	if($_POST['prijemca'] == "servis informačných systémov"){
+		@$mail->AddTo("servisis@emm.sk");
+	}elseif($_POST['prijemca'] == "BS, technickú bezpečnosť a dochádzkový a prístupový systém"){
+		@$mail->AddTo("servisbs@emm.sk");
+	}
+	$mail->Html($mailInfo,"UTF-8");
+	
+	$sent = $mail->send("Servisny formular");	
+	if($sent){
 		echo '<div class="vpb_success" align="left">Captcha bola zadaná správne<br/>Žiadosť bola odoslaná</div>';
 	}else{
 		echo '<div class="vpb_success" align="left">Captcha bola zadaná správne<br/>Mail sa však nepodarilo odoslať</div>';
